@@ -1,0 +1,30 @@
+{
+  "name": "commandlinedictionary",
+  "version": "1.0.0",
+  "description": "dictionary app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivakumarbegari/cmddict.git"
+  },
+  "author": "Shiva Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shivakumarbegari/cmddict/issues"
+  },
+  "homepage": "https://github.com/shivakumarbegari/cmddict#readme",
+  "bin": {
+    "dict": "index.js"
+  },
+  "dependencies": {
+    "commander": "^2.17.1",
+    "inquirer": "^6.2.0",
+    "prettyjson": "^1.2.1"
+  },
+  "devDependencies": {
+    "shuffle-words": "^0.1.2"
+  }
+}
