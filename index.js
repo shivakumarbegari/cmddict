@@ -39,5 +39,17 @@ program
   .description('Play a game with me.')
   .action(()=>startgame());
 
+//command validation
+if(process.argv.slice(2).length<=0){
+  wordofday();
+}
+else if(process.argv.slice(2).length==2 && ["def","syn","ant","ex"].indexOf(process.argv.slice(2)[0])<0 ){
+  program.outputHelp();
+  process.exit();
+}
+else if(process.argv.slice(2).length>2){
+  program.outputHelp();
+  process.exit();
+}
 
 program.parse(process.argv)
