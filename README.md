@@ -1,15 +1,11 @@
 # cmddict
 command line dictionary app using node js and wordnik api
 
-This application is developed for an assignment with following statement.
-
 ## Command Line Dictionary Tool
 
-  Create a command line dictionary tool using wordnik (http://wordnik.com) api and Node/Express.
+  Command line dictionary tool using wordnik (http://wordnik.com) api and Node/Express.
   
-Requirements
-The command line tool should have following functions - 
-The output should be nicely formatted on console, and show all relevant information.
+Offers following functions with nicely formatted output.
 
 1. Word Definitions
 	* Display definitions of a word. 
@@ -36,12 +32,12 @@ The output should be nicely formatted on console, and show all relevant informat
 
 7. Word Game
 	* ./dict play
-	* The program should display a definition, synonym, or antonym and ask the user to enter the word
+	* The program will display a definition, synonym, or antonym and ask the user to enter the word
   
-	* If correct word is entered, program should tell that the word is correct
-	* Other(not displayed) Synonyms of the word should be accepted as correct answer.
+	* If correct word is entered, program will tell that the word is correct. Synonyms of the word will be accepted as correct answer.
+	* Other(not displayed) 
   
-	   If incorrect word is entered, program should ask for
+	   If incorrect word is entered, program will ask for
      
 		   1. try again 
        
