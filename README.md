@@ -19,8 +19,8 @@ The output should be nicely formatted on console, and show all relevant informat
 	* Display synonyms of a word. 
 	* ./dict syn <word>
 3. Word Antonyms
-	Display antonyms of a word
-	./dic ant <word>
+	* Display antonyms of a word
+	* ./dic ant <word>
 
 4. Word Examples
 	* Display examples of a word
