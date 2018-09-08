@@ -26,10 +26,6 @@ Offers following functions with nicely formatted output.
 	* Display all above details for a word
 	* ./dict <word> or ./dict dict <word>
 
-6. Word of the Day Full Dict
-	* Display all above details of word of the day
-	* ./dict
-
 7. Word Game
 	* ./dict play
 	* The program will display a definition, synonym, or antonym and ask the user to enter the word
