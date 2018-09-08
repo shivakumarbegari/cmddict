@@ -11,23 +11,23 @@ program
 program
   .command('def <word>')
   .description('Display definitions of a word')
-  .action(word => define(word)
+  .action(word => define(word,false,false)
 );
 
 program
   .command('syn <word>')
   .description('Display synonyms of a word.')
-  .action((word) => synonym(word));
+  .action((word) => synonym(word,false,false));
 
 program
   .command('ant <word>')
   .description('Display antonyms of a word.')
-  .action((word) => antonym(word));
+  .action((word) => antonym(word,false,false));
 
 program
   .command('ex <word>')
   .description('Display examples of a word.')
-  .action((word) => example(word));
+  .action((word) => example(word,false,false));
 
 program
   .command('* <word>')
@@ -41,7 +41,10 @@ program
 
 //command validation
 if(process.argv.slice(2).length<=0){
-  wordofday();
+  //wordofday();
+  console.log("\n  Word of the day functionality is disabled. Please use the help displayed below")
+  program.outputHelp();
+  process.exit();
 }
 else if(process.argv.slice(2).length==2 && ["def","syn","ant","ex"].indexOf(process.argv.slice(2)[0])<0 ){
   program.outputHelp();
